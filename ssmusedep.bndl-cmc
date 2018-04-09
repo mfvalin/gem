@@ -7,7 +7,7 @@ Linux_x86-64:/ssm/net/cmdn/vgrid/5.6.9/intel-2016.1.156
 AIX-powerpc7:/ssm/net/cmdn/vgrid/5.6.9/xlf13
 
 ENV/d/modelutils/modelutils_1.4-LTS.7
-ENV/d/rpnphy/rpnphy_5.8-LTS.8
-GEM/d/gemdyn/gemdyn_4.8-LTS.13
+ENV/d/rpnphy/rpnphy_5.8-LTS.9
+GEM/d/gemdyn/gemdyn_4.8-LTS.14
 
 ENV/rde/1.0.6

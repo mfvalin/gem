@@ -9,7 +9,7 @@ endif
 # endif
 # GEM_VERSION   = $(shell cat $(gem)/VERSION)
 # GEM_VERSION_X = x/
-GEM_VERSION0  = 4.8-LTS.11
+GEM_VERSION0  = 4.8-LTS.12
 GEM_VERSION   = $(notdir $(GEM_VERSION0))
 GEM_VERSION_X = $(dir $(GEM_VERSION0))
 
@@ -20,6 +20,8 @@ GEM_ABS_SHARED_FILES = $(BINDIR)/$(maindm)
 
 GEM_ABS       = gemdm
 GEM_ABS_FILES = $(BINDIR)/$(maindm)
+
+LIBHPCSPERF=
 
 .PHONY: gem_vfiles
 GEM_VFILES = gem_version.inc gem_version.h
