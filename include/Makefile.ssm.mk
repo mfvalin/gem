@@ -65,8 +65,8 @@ gem_ssm_arch_rm:
 	rm -rf $(BUILDSSM)/$(GEM_SSMARCH_NAME)
 $(BUILDSSM)/$(GEM_SSMARCH_NAME):
 	mkdir -p $@/include/$(EC_ARCH) $@/lib/$(EC_ARCH) $@/bin/$(BASE_ARCH) ; \
-	ln -s $(EC_ARCH) $@/include/$(COMP_ARCH) ; \
-	ln -s $(EC_ARCH) $@/lib/$(COMP_ARCH) ; \
+	ln -s ./$(EC_ARCH)/. $@/include/$(COMP_ARCH) ; \
+	ln -s ./$(EC_ARCH)/. $@/lib/$(COMP_ARCH) ; \
 	touch $@/include/dummy_$(GEM_SSMARCH_NAME).inc ; \
 	touch $@/lib/libdummy_$(GEM_SSMARCH_NAME).a ; \
 	touch $@/bin/dummy_$(GEM_SSMARCH_NAME).bin ; \
